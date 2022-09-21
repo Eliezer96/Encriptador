@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Encriptador de Texto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <main class="main">
+
+        <img src="images/logo.png" class="logo" onclick="home()"> 
+        <img src="images/logobetter.PNG" class="logo-isrof">
+
+        <section class="div-principal">
+
+            <form action="">
+                <textarea class="text-input" type="text" name="input-texto" maxlength="120" id="input-texto" placeholder="Digite su texto"></textarea>
+
+                <div class="mensaje-alerta">
+                    <img src="images/Vector.png" class="img-alerta">
+                    <label for="input-texto">Solo letras minúsculas y sin acentos.</label>
+                </div>
+
+
+                <div class="botones-main">
+                    <input class="btn-encriptar" type="submit" value="Encriptar" id="btn-encriptar">
+                    <input class="btn-desencriptar" type="submit" value="Desencriptar" id="btn-desencriptar">
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <section class="div-secundario">
+
+            <div id="div-desaparece" class="message-box-div">
+                <img src="images/Muñeco.png"> 
+                <h2>Ningún mensaje fue encontrado</h2>
+                <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
+            </div>
+
+
+            <div id="div-aparece">
+                <textarea class="div-mensaje" type="text" id="mensaje" placeholder="Ningún mensaje"></textarea>
+                <input class="btn-copiar" type="submit" value="Copiar" id="btn-copiar">
+            </div>
+    
+        </section>
+
+    </main>
+    <script src='script.js'></script>
+</body>
+</html>

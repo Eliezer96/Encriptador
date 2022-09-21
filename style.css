@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster Two', cursive;
+    background: black;
+}
+
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-encriptar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+  
+    position: static;
+    width: 328px;
+    height: 87px;
+    left: 0px;
+    top: 0px;
+  
+    background: transparent;
+    border-color: orange;
+    border-style:solid;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+    flex-grow: 0;
+    
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 19px;
+    justify-content: center; 
+  
+}
+
+.btn-encriptar:hover{
+    background: orange;
+    color: black;
+    border-radius: 20px 0;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.btn-desencriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+  
+    position: static;
+    width: 328px;
+    height: 87px;
+    left: 352px;
+    top: 0px;
+
+    background: transparent;
+    border-color: orange;
+    border-style:solid;
+    box-sizing: border-box;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 24px;
+    
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 19px;
+    justify-content: center;
+}
+
+.btn-desencriptar:hover{
+    background: orange;
+    color: black;
+    border-radius: 20px 0;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.text-input {
+    /* Digite seu texto */
+    text-transform:lowercase;
+    position: absolute;
+    width: 600px;
+    height: 350px;
+    left: 8%;
+    top: 168px;
+  
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    justify-content: baseline;
+    resize: none;
+
+    color: orange;
+    background: transparent;
+    border: none;
+
+}
+
+::placeholder { color: whitesmoke; }
+
+
+.text-input:focus{
+    /*quita el border y la linea cuando onclick*/ 
+    border: none;
+    outline: none;
+}
+
+
+/*El otro lado del encriptador*/
+.div-secundario{
+    position: absolute;
+    width: 400px;
+    height: 610px;
+    left: 65%;
+    top: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    
+    background: black;
+    /*
+    box-shadow: 2px 1px 30px -10px rgba(209, 203, 203, 0.993);
+    */
+    box-shadow: 2px 1px 30px -10px orange;
+    
+    
+}
+
+.div-secundario:hover{
+    border-radius: 32px 0;
+    box-shadow: 2px 1px 30px -10px rgba(209, 203, 203, 0.993);
+}
+
+.div-secundario h2{
+    position: static;
+    width: 336px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+  
+    font-family: 'Lobster Two', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    background: black;
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+    
+}
+
+.div-secundario h3{
+    position: static;
+    width: 336px;
+    height: 48px;
+    left: 0px;
+    top: 74px;
+  
+    font-family: 'Lobster Two', cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    background: black;
+  
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.message-box-div, .message-box-div img {
+    padding-top: 5px;
+    background: black;
+}
+
+.img-alerta{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;  
+
+}
+
+label {
+    position:static;
+    width: auto;
+    height: 18px;
+    left: 34px;
+    top: 0px;
+    padding-left: 25px;
+    font-weight: 600;
+    
+    font-family: 'Lobster Two', cursive;
+    font-style: normal;
+    font-size:20px;
+    line-height: 100%;
+  
+    color: #495057;
+}
+
+.mensaje-alerta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    
+    position: absolute;
+    width: auto;
+    height: 18px;
+    left: 8%;
+    top: 495px;
+}
+
+.botones-main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: absolute;
+    width: 680px;
+    height: 87px;
+    left: 5%;
+    top: 530px;
+}
+
+.logo{
+    position: absolute;
+    left: 30px;
+    right: 37.43%;
+    top: 25px;
+    bottom: 0%;
+}
+
+.div-mensaje{
+    position: absolute;
+    width: 20rem;
+    height: 781px;
+    left:2.5rem;
+    word-wrap: break-word;
+    top: 52px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    resize: none;
+
+    color: #495057;
+    border:none;
+    background:transparent;
+  }
+
+
+.div-mensaje:focus{ 
+    border: none;
+    outline: none;
+}
+
+.btn-copiar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+  
+    position: absolute;
+    width: 336px;
+    height: 87px;
+    left: 25px;
+    top: 510px;
+
+    background: transparent;
+    border-color: orange;
+    border-style:solid;
+    box-sizing: border-box;
+
+   
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 8px;
+    justify-content: center;
+  }
+
+  .btn-copiar:hover{
+    background: orange;
+    color: black;
+    border-radius: 22px 0;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.logo-isrof{
+    position: absolute;
+    left: 200px;
+    top: 30px;
+    bottom: 0%;
+    width: 150px;
+}
